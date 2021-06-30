@@ -25,7 +25,7 @@ const definition = {
             await reporting.onOff(endpoint);
         },
     },
-        {
+    {
         zigbeeModel: ['ICZB-RM11S'],
         model: 'ICZB-RM11S',
         vendor: 'iCasa',

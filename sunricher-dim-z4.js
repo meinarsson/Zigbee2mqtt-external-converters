@@ -47,7 +47,16 @@ const definition = {
             return {l1: 1, l2: 2, l3: 3, l4: 4};
         },
         whiteLabel: [{vendor: 'Sunricher', model: 'SR-ZG9001K12-DIM-Z4'}],
-    }
+    },
+    {
+        zigbeeModel: ['RGBgenie ZB-5004'],
+        model: 'ZB-5004',
+        vendor: 'RGB Genie',
+        description: 'Zigbee 3.0 remote control',
+        fromZigbee: [fz.command_recall, fz.command_on, fz.command_off, fz.command_move, fz.command_stop, fz.battery],
+        exposes: [e.battery(), e.action(['recall_*', 'on', 'off', 'brightness_stop', 'brightness_move_up', 'brightness_move_down'])],
+        toZigbee: [],
+    },
 };
 
 module.exports = definition;

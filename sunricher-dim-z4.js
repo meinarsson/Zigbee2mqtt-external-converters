@@ -17,7 +17,7 @@ const definition = {
         toZigbee: [],
         meta: {multiEndpoint: true, battery: {dontDividePercentage: true}},
         configure: [],
-    }
+    },
 };
 
 module.exports = definition;

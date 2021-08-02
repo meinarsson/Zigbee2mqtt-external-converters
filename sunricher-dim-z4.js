@@ -7,7 +7,6 @@ const e = exposes.presets;
 const ea = exposes.access;
 
 const definition = {
-    {
         zigbeeModel: ['ZGRC-KEY-013'],
         model: 'ZGRC-KEY-013',
         vendor: 'Sunricher',
@@ -17,7 +16,6 @@ const definition = {
         toZigbee: [],
         meta: {multiEndpoint: true, battery: {dontDividePercentage: true}},
         configure: [],
-    },
 };
 
 module.exports = definition;

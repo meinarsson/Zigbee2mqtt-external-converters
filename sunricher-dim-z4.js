@@ -15,7 +15,9 @@ const definition = {
         fromZigbee: [fz.command_recall, fz.command_on, fz.command_off, fz.command_move, fz.command_stop, fz.battery],
         exposes: [e.battery(), e.action(['recall_*', 'on', 'off', 'brightness_stop', 'brightness_move_up', 'brightness_move_down'])],
         toZigbee: [],
-    },
+        meta: {multiEndpoint: true, battery: {dontDividePercentage: true}},
+        configure: [],
+    }
 };
 
 module.exports = definition;

@@ -15,7 +15,7 @@ const definition = {
         exposes: [e.battery(), e.action(['recall_*', 'on', 'off', 'brightness_stop', 'brightness_move_up', 'brightness_move_down'])],
         toZigbee: [],
         meta: {multiEndpoint: true, battery: {dontDividePercentage: true}},
-        configure: [],
+//       configure: [],
 };
 
 module.exports = definition;
